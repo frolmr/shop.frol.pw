@@ -85,6 +85,7 @@ body {
   font-size: 14px; }
 
 .middle-section {
+  background: #e7eef5;
   height: 98px;
   line-height: 95px; }
 
@@ -158,7 +159,8 @@ body {
   height: 42px;
   border: 1px solid #dce6f0;
   background: #fff;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .cart__link {
   width: 87px;
@@ -260,6 +262,7 @@ body {
       border-left-color: #00b9fe; }
 
 footer {
+  background: url("../images/footer-pattern.png");
   height: 228px;
   margin-top: -228px;
   margin-bottom: -228px;
@@ -289,6 +292,73 @@ footer {
   width: 36px;
   height: 36px;
   background-size: 36px 36px; }
+
+.navigation {
+  position: relative;
+  top: 60px;
+  left: 44px;
+  width: 570px;
+  margin: 0 auto; }
+
+.nav-list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-right: 72px; }
+
+.nav-list__item {
+  list-style: none;
+  font-size: 15px;
+  margin-bottom: 7px; }
+
+.nav-list_header {
+  margin: 0;
+  color: white;
+  font-family: elektra_light_probold;
+  font-size: 15px;
+  margin-bottom: 7px; }
+
+.nav-list__link {
+  color: white; }
+
+.cart__filling {
+  display: none;
+  background: white;
+  width: 244px;
+  height: 228px;
+  border: 1px solid #dce6f0;
+  position: absolute;
+  top: 43px;
+  right: -2px;
+  line-height: 15px;
+  text-align: left;
+  z-index: 10;
+  border-collapse: collapse; }
+
+.cart__item {
+  height: 75px; }
+  .cart__item:nth-child(even) {
+    border-bottom: 1px solid #dce6f0;
+    border-top: 1px solid #dce6f0;
+    background: #f8fafb; }
+
+.cart__item_image {
+  padding: 0;
+  width: 83px;
+  height: 75px; }
+
+.cart__item_image_iphone {
+  background: url("../images/iphone.jpg") center center no-repeat; }
+
+.cart__item_image_ipad {
+  background: url("../images/ipad.jpg") center center no-repeat; }
+
+.cart__item_image_macbook {
+  background: url("../images/macbook.jpg") center center no-repeat; }
+
+.cart__item-link {
+  color: #00b9fe;
+  font-size: 13px; }
 
 .cf:before,
 .cf:after {

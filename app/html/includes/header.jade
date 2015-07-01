@@ -15,13 +15,14 @@ header.head
                 form.search__form
                     input(type='text', placeholder='iMac 27 дюймов').search__input
                     input(type='submit' value='Поиск').search__submit
-            a(href='map.html').map-link Карта проезда
-            a(href='history.html').order-history История заказов
+            a(href='#').map-link Карта проезда
+            a(href='#').order-history История заказов
             div.cart
-                a(href='cart.html').cart__link Корзина (3)
+                a(href='#').cart__link Корзина (3)
+                include cart.jade
     div.bottom-section
         div.content
-            - var catalog = [{name:'Мобильные телефоны', link:'mobile.html'}, {name:'Планшеты',link:'tablets.html'},{name:'Мр3 плееры',link:'mp3.html'},{name:'Персональные компьютеры', link:'PC.html'},{name:'Ноутбуки', link:'notebook.html'},{name:'Apple TV',link:'appletv.html'},{name:'Аксессуары',link:'accessoreies.html'}]
+            - var catalog = [{name:'Мобильные телефоны', link:'#'}, {name:'Планшеты',link:'#'},{name:'Мр3 плееры',link:'#'},{name:'Персональные компьютеры', link:'#'},{name:'Ноутбуки', link:'#'},{name:'Apple TV',link:'#'},{name:'Аксессуары',link:'#'}]
             nav.catalog
                 each item in catalog
                     if item.name == 'Планшеты'

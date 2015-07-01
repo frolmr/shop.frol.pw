@@ -1,0 +1,33 @@
+.cart__filling
+  display: none
+  background: white
+  width: 244px
+  height: 228px
+  border: 1px solid #dce6f0
+  position: absolute
+  top: 43px
+  right: -2px
+  line-height: 15px
+  text-align: left
+  z-index: 10
+  border-collapse: collapse
+.cart__item
+  height: 75px
+  &:nth-child(even)
+    border-bottom: 1px solid #dce6f0
+    border-top: 1px solid #dce6f0
+    background: #f8fafb
+.cart__item_image
+  padding: 0
+  width: 83px
+  height: 75px
+
+$images: iphone ipad macbook
+
+@each $image in $images
+  .cart__item_image_#{$image}
+    background: url('../images/#{$image}.jpg') center center no-repeat
+
+.cart__item-link
+  color: #00b9fe
+  font-size: 13px

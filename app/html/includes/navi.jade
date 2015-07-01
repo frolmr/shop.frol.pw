@@ -1,0 +1,19 @@
+- var column1 = [{name:'О нас',link : '#'},{name:'Наши цены',link:'#'},{name:'Наши скидки',link:'#'},{name:'Акции',link:'#'}]
+- var column2 = [{name:'Смартфоны',link : '#'},{name:'Планшеты',link:'#'},{name:'Компьютеры',link:'#'},{name:'Аксессуары',link:'#'}]
+- var column3 = [{name:'Телефоны',link:'#'},{name:'Адреса',link:'#'},{name:'Карта проезда',link:'#'},{name:'Обратная связь',link:'#'}]
+- var columns = [column1, column2, column3]
+ul.nav-list
+    h3.nav-list_header О магазине
+    each item in column1
+        li.nav-list__item
+            a(href=item.link).nav-list__link=item.name
+ul.nav-list
+    h3.nav-list_header Каталог
+    each item in column2
+        li.nav-list__item
+            a(href=item.link).nav-list__link=item.name
+ul.nav-list
+    h3.nav-list_header Контакты
+    each item in column3
+        li.nav-list__item
+            a(href=item.link).nav-list__link=item.name
