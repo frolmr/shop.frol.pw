@@ -25,7 +25,8 @@ $social_icons: VK FB TW
 
 @each $icon in $social_icons
   .social__link_#{$icon}
-    background: url('../images/#{$icon}.jpg') no-repeat
+    background: url('../images/#{$icon}_big.png') no-repeat
+    background-size: 22px 22px
 
 .address-wrap
   font-size: 13px
@@ -64,8 +65,8 @@ $social_icons: VK FB TW
   float: left
   margin-right: 60px
 .logo__image
-  vertical-align: middle
-  margin-top: 12px
+  margin-top: 24px
+  margin-left: 1px
 .search
   display: inline-block
   float: left
@@ -149,6 +150,7 @@ $social_icons: VK FB TW
       padding-left: 23px
       &:before
         border: none
+        display: none
   &:last-child
     .catalog__link
       padding-right: 0
@@ -181,3 +183,43 @@ $social_icons: VK FB TW
     border-color: transparent
     border-left-color: #f7f7f7
     filter: drop-shadow(1px 0px 0px #dae1eb)
+.catalog__item_active
+  background: #00b9fe
+  .catalog__link
+    color: white
+    &:before,
+    &:after
+      border: 0px solid #00b9fe
+      border-width: 20px 13px
+    &:before
+      border-left-color: transparent
+    &:after
+      border-color: transparent
+      border-left-color: #00b9fe
+.catalog__item
+  &:hover
+    background: #dce6f0
+    .catalog__link
+      &:before,
+      &:after
+        border: 0px solid #dce6f0
+        border-width: 20px 13px
+      &:before
+        border-left-color: transparent
+      &:after
+        border-color: transparent
+        border-left-color: #dce6f0
+.catalog__item_active
+  &:hover
+    background: #00b9fe
+    .catalog__link
+      color: white
+      &:before,
+      &:after
+        border: 0px solid #00b9fe
+        border-width: 20px 13px
+      &:before
+        border-left-color: transparent
+      &:after
+        border-color: transparent
+        border-left-color: #00b9fe

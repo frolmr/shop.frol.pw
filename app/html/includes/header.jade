@@ -1,11 +1,7 @@
 header.head
     div.top-section
         div.content
-            - var socials = [{name:'VK', link:'http://vk.com'},{name:'FB', link:'http://facebook.com'},{name:'TW', link:'http://twitter.com'}]
-            ul.social
-                each social in socials
-                    li.social__item
-                        a(href=social.link target='blank').social__link(class='social__link_'+social.name)=social.name
+            include socials.jade
             div.phone
                 span.phone__code +7 (921)
                 span.phone__number 322 12 32
