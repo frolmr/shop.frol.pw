@@ -26,7 +26,7 @@ header.head
     div.bottom-section
         div.content
             - var catalog = [{name:'Мобильные телефоны', link:'mobile.html'}, {name:'Планшеты',link:'tablets.html'},{name:'Мр3 плееры',link:'mp3.html'},{name:'Персональные компьютеры', link:'PC.html'},{name:'Ноутбуки', link:'notebook.html'},{name:'Apple TV',link:'appletv.html'},{name:'Аксессуары',link:'accessoreies.html'}]
-            ul.catalog
+            nav.catalog
                 each item in catalog
                     if item.name == 'Планшеты'
                         li.catalog__item.catalog__item_active

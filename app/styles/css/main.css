@@ -181,58 +181,43 @@ body {
   list-style: none;
   display: inline-block;
   background: #f7f7f7;
-  position: relative;
   height: 40px;
-  line-height: 40px;
-  margin-left: -34px;
-  padding-left: 28px;
-  padding-right: 43px;
-  overflow: hidden; }
-  .catalog__item:after, .catalog__item:before {
-    right: 0;
-    top: -2px;
-    z-index: 1;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    border: 22px solid transparent;
-    border-left: 13px solid #dae1eb;
-    pointer-events: none; }
-  .catalog__item:before {
-    z-index: 2;
-    padding-right: 1px;
-    border-left: 13px solid #f7f7f7; }
-  .catalog__item:hover {
-    background: #dce6f0; }
-    .catalog__item:hover:before {
-      border-left-color: #dce6f0; }
-  .catalog__item:first-child {
-    padding-left: 24px;
-    margin-left: 0; }
-  .catalog__item:last-child {
-    margin-right: -25px;
-    padding-right: 20px; }
-    .catalog__item:last-child:after, .catalog__item:last-child:before {
+  line-height: 40px; }
+  .catalog__item:first-child .catalog__link {
+    padding-left: 23px; }
+    .catalog__item:first-child .catalog__link:before {
       border: none; }
-
-.catalog__item_active {
-  background: #00b9fe; }
-  .catalog__item_active:hover {
-    background: #00b9fe; }
-    .catalog__item_active:hover:before {
-      border-left-color: #00b9fe; }
-  .catalog__item_active .catalog__link {
-    color: white; }
-  .catalog__item_active:before {
-    border-left-color: #00b9fe; }
+  .catalog__item:last-child .catalog__link {
+    padding-right: 0; }
+    .catalog__item:last-child .catalog__link:after {
+      border: none; }
 
 .catalog__link {
   display: inline-block;
   color: #5c7b98;
+  position: relative;
   font-size: 15px;
-  padding-top: 2px;
+  padding: 2px 10px 0 8px;
+  margin-right: 21px;
   text-decoration: none; }
+  .catalog__link:before, .catalog__link:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    border: 1px solid #f7f7f7;
+    border-width: 20px 13px;
+    width: 0;
+    height: 0; }
+  .catalog__link:before {
+    left: -19px;
+    border-left-color: transparent;
+    filter: drop-shadow(-1px 0px 0px white); }
+  .catalog__link:after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #f7f7f7;
+    filter: drop-shadow(1px 0px 0px #dae1eb); }
 
 .cf:before,
 .cf:after {
