@@ -15,12 +15,37 @@ body
 @import content
 
 .scroll
+  display: none
   width: 77px
   height: 34px
+  //line-height: 34px
+  text-align: center
   background: #00b9fe
   position: fixed
   bottom: 252px
-  right: 50px
+  right: 10px
+  font-family: elektra_light_probold
+  font-size: 17px
+  color: white
+  &:after,
+  &:before
+    content: ' '
+    width: 0
+    position: relative
+    height: 0
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    border-bottom: 5px solid #00b9fe
+  &:after
+    bottom: 66px
+  &:before
+    top: 8px
+    border-bottom: 5px solid white
+.scroll__inner
+  margin-top: -15px
+  height: 100%
+  width: 100%
+
 
 .cf:before,
 .cf:after
