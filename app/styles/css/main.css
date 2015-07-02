@@ -87,6 +87,10 @@ body {
   font-family: elektra_light_probold;
   font-size: 14px; }
 
+.phone__number {
+  color: #fff;
+  text-decoration: none; }
+
 .middle-section {
   background: #e7eef5;
   height: 98px;
@@ -100,6 +104,9 @@ body {
 .logo__image {
   margin-top: 24px;
   margin-left: 1px; }
+
+.logo__link {
+  text-indent: -99999px; }
 
 .search {
   display: inline-block;

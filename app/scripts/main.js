@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
+        if ($(this).scrollTop() > 100) {
             $('.scroll').fadeIn();
         } else {
             $('.scroll').fadeOut();

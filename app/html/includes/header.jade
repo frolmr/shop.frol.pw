@@ -3,14 +3,16 @@ header.head
         div.content
             include socials.jade
             div.phone
-                span.phone__code +7 (921)
-                span.phone__number 322 12 32
+                a(href='tel:+79213221232').phone__number
+                    span.phone__code +7 (921)
+                    span.phone__number 322 12 32
             div.address-wrap
                 span.address г. Москва, ул. Новая 246, офис 214
     div.middle-section
         div.content
             div.logo
-                img(src='images/logo_big.png').logo__image
+                a(href='#').logo__link
+                    img(src='images/logo_big.png' alt='logo').logo__image
             div.search
                 form.search__form
                     input(type='text', placeholder='iMac 27 дюймов').search__input
