@@ -1,0 +1,23 @@
+div.content
+    div.breadcumbs
+        a(href='#').breadcumbs__link Главная
+        span.breadcumbs__divider >
+        a(href='#').breadcumbs__link Каталог
+        span.breadcumbs__divider >
+        span.breadcumbs__link.breadcumbs__link_active iPad Air Wi-Fi + Cellular 128GB - Silver
+    div.shop-item.cf
+        div.slider
+        div.description
+            h1.description__header iPad Air Wi-Fi + Cellular 128GB - Silver
+            - var description = [{term:'Артикул', definition:'42787825'},{term:'Опция', definition:'включена'},{term:'Цвет', definition:'серебристый'},{term:'Размер', definition:'1280*1245*90'},{term:'Вес', definition:' 200кг'},{term:'Артикул', definition:'42787825'},{term:'Опция', definition:'включена'},{term:'Цвет', definition:'серебристый'},{term:'Размер', definition:'1280*1245*90'},{term:'Вес', definition:' 200кг'}]
+            table.description__list
+                each item in description
+                    tr.description__item
+                        td.description__term=item.term
+                        td.description__definition=item.definition
+    div.info
+        h2.info__header Пара слов о магазине
+        p.info__text
+            |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+            |Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            |Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
