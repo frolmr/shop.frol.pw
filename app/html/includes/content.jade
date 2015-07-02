@@ -9,17 +9,25 @@ div.content
         div.slider
             div.slide
                 img(src='images/slide-1.jpg').slide__image
-            ul.trigger
-                li.trigger__slide
-                    img(src='images/trigger-1.jpg').trigger__image
-                li.trigger__slide
-                    img(src='images/trigger-2.jpg').trigger__image
-                li.trigger__slide
-                    img(src='images/trigger-3.jpg').trigger__image
-                li.trigger__slide
-                    img(src='images/slide-1.jpg').trigger__image
-            div(href='#').prev >
-            div(href='#').next >
+            div.trigger__wrap
+                ul.trigger
+                    li.trigger__slide
+                        a(href='#').trigger__link
+                            img(src='images/trigger-1.jpeg').trigger__image
+                    li.trigger__slide
+                        a(href='#').trigger__link
+                            img(src='images/trigger-2.jpeg').trigger__image
+                    li.trigger__slide
+                        a(href='#').trigger__link
+                            img(src='images/trigger-3.jpeg').trigger__image
+                    li.trigger__slide
+                        a(href='#').trigger__link
+                            img(src='images/trigger-4.png').trigger__image
+                    li.trigger__slide
+                        a(href='#').trigger__link
+                            img(src='images/slide-1.jpg').trigger__image
+            a.slide-button.prev >
+            a.slide-button.next >
         div.description
             h1.description__header iPad Air Wi-Fi + Cellular 128GB - Silver
             - var description = [{term:'Артикул', definition:'42787825'},{term:'Опция', definition:'включена'},{term:'Цвет', definition:'серебристый'},{term:'Размер', definition:'1280*1245*90'},{term:'Вес', definition:' 200кг'},{term:'Артикул', definition:'42787825'},{term:'Опция', definition:'включена'},{term:'Цвет', definition:'серебристый'},{term:'Размер', definition:'1280*1245*90'},{term:'Вес', definition:' 200кг'}]
