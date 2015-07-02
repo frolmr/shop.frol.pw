@@ -1,0 +1,70 @@
+.next,
+.prev
+  display: inline-block
+  position: relative
+  width: 15px
+  height: 34px
+  line-height: 34px
+  vertical-align: middle
+  background: #d0e4f3
+  color: white
+  text-align: right
+  text-decoration: none
+  margin-right: 20px
+  padding-top: 3px
+  bottom: 54px
+  left: 8px
+  font-family: elektra_light_probold
+  cursor: pointer
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    box-sizing: border-box
+    border: 1px solid #d0e4f3
+    border-width: 18px 8px
+    width: 0
+    height: 0
+    left: 100%
+    border-color: transparent
+    border-left-color: #d0e4f3
+  &:hover
+    background: #00b9fe
+    &:after
+      border: 1px solid #00b9fe
+      border-width: 18px 8px
+      border-color: transparent
+      border-left-color: #00b9fe
+.prev
+  transform: rotate(180deg)
+.next
+  left: 240px
+.trigger
+  overflow: hidden
+  padding: 0
+  width: 243px
+  height: 75px
+  margin: 0 auto
+.trigger__slide
+  list-style: none
+  display: inline-block
+.slide
+  margin-bottom: 8px
+.info
+  margin-bottom: 70px
+.info__header
+  font-family: elektra_light_probold
+  font-size: 25px
+  color: #5c7b98
+  margin: 0 0 7px
+.trigger__slide
+  padding-left: 9px
+  &:first-child
+    padding-left: 0
+.info__text
+  margin: 0
+  font-size: 15px
+  color: #5c7b98
+  line-height: 20px
+  column-gap: 42px
+  column-count: 3
