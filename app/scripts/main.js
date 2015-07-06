@@ -56,11 +56,11 @@ function addActive() {
 }
 
 function htmSlider(){
-    var slideWrap = jQuery('.trigger');
-    var nextLink = jQuery('.next');
-    var prevLink = jQuery('.prev');
-    var slideWidth = jQuery('.trigger__slide').outerWidth();
-    var scrollSlider = slideWrap.position().left - slideWidth;
+    var slideWrap = jQuery('.trigger'),
+        nextLink = jQuery('.next'),
+        prevLink = jQuery('.prev'),
+        slideWidth = jQuery('.trigger__slide').outerWidth(),
+        scrollSlider = slideWrap.position().left - slideWidth;
 
     nextLink.click(function(){
         if(!slideWrap.is(':animated')) {

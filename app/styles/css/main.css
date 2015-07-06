@@ -14,7 +14,8 @@ body {
   font-family: elektra_light_proregular; }
 
 .head {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  min-width: 1000px; }
 
 .top-section {
   height: 41px;
@@ -274,7 +275,8 @@ body {
 footer {
   background: url("../images/footer-pattern.png");
   height: 228px;
-  margin-bottom: -228px; }
+  margin-bottom: -228px;
+  min-width: 1000px; }
 
 .logo__image {
   display: inline-block;
