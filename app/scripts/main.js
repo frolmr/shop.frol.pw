@@ -8,7 +8,7 @@ $(document).ready(function(){
 
         var $this = $(this),
             item = $this.closest('.trigger__slide'),
-            container = $this.closest('.slider'),
+            container = $this.closest('.galery'),
             display = container.find('.slide'),
             path = item.find('img').attr('src');
 
