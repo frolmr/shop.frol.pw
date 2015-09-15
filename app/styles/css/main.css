@@ -4,7 +4,8 @@ body,
   height: 100%; }
 
 body > .wrap {
-  height: auto; }
+  height: auto;
+  min-height: 100%; }
 
 .container {
   height: 765px; }
@@ -274,7 +275,7 @@ body {
 footer {
   background: url("../images/footer-pattern.png");
   height: 228px;
-  margin-top: 228px;
+  margin-top: -228px;
   margin-bottom: -228px;
   min-width: 1000px; }
 
